@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <title>Table</title>
+</head>
+<body>
+    <header>
+        <ul class="header">
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="table.html"> Table </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Выберите стиль таблицы: </h2>
+        <div>
+            <p>
+                <input type="radio" name="review_type" value="first"> Первая<br>
+                <input type="radio" name="review_type" value="second"> Вторая<br>
+                <input type="radio" name="review_type" value="third"> Третья<br>
+                <button onclick="checkType(value)">Выбрать</button>
+            </p>
+        </div>
+        <br>
+        <div id="table"></div>
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>by Vladislav Kozlovski</li>
+            <li><div id='DataTime'></div></li>
+            <li><div id='version'></div></li>
+        </ul>
+    </footer>
+</body>
+</html>
