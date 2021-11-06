@@ -46,8 +46,8 @@ document.getElementById('DataTime').innerHTML = dataTime
 
 //проверка на мобильную, компьютерную версию по OC
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    document.getElementById('version').innerHTML = "Mobile version"
-} else document.getElementById('version').innerHTML = "PC version"
+    document.getElementById('version').innerHTML = "Mobile version 1.04"
+} else document.getElementById('version').innerHTML = "PC version 1.04"
 
 
 //инициализация объектов для таблиц
