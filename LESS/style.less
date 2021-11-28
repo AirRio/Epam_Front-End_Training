@@ -1,0 +1,99 @@
+// Color variables (appears count calculates by raw css)
+@color0: #333030; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 100%; // Appears 2 times
+@width1: 20%; // Appears 3 times
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	max-width: auto;
+	min-width: auto;
+}
+header {
+	background: @color0;
+	font-size: 20px;
+	height: 30px;
+	position: fixed;
+	width: @width0;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		li {
+			display: inline-block;
+			text-align: center;
+			vertical-align: baseline;
+			width: @width1;
+		}
+	}
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a#link {
+	color: rgb(9, 105, 76);
+}
+nav {
+	float: right;
+}
+img {
+	float: right;
+	height: 20%;
+	overflow: hidden;
+	position: initial;
+	width: @width1;
+}
+div#DataTime {
+	color: aliceblue;
+	&:hover {
+		color: yellow;
+	}
+}
+div#version {
+	color: white;
+	&:hover {
+		color: yellow;
+	}
+}
+table {
+	align-items: baseline;
+	display: -ms-inline-grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: flex;
+}
+td {
+	grid-column: 1 / 4;
+	grid-row: 1;
+}
+footer {
+	background: @color0;
+	bottom: 0;
+	clear: both;
+	flex: 0 0 auto;
+	position: fixed;
+	width: @width0;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		li {
+			color: white;
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			width: @width1;
+		}
+	}
+}
+li {
+	a {
+		&:hover {
+			color: yellow;
+		}
+	}
+}
